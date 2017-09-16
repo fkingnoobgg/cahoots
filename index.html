@@ -7,43 +7,51 @@
 <body>
     <form id="signup"  method="POST">
         <ul id="section-tabs">
-          <li class="current active"><span>1.</span> Personal Info</li>
+          <li class="current active"><span>1.</span> Basic Info</li>
           <li><span>2.</span> Address</li>
-          <li><span>3.</span> Medical info</li>
-          <li><span>4.</span> Checks</li>
+          <li><span>3.</span> Compliance</li>
+          <li><span>4.</span> Declaration</li>
         </ul>
       <div id="fieldsets">
           <fieldset class="current">
             <label for="email">Email:</label>
             <input name="email" type="email" class="required email" />
-            <label name="password" for="password">Password:</label>
-            <input type="password" minlength="10" class="required">
+            <label for="firstname">Firstname:</label>
+            <input name="firstname" type="text" class="required" />
+            <label for="lastname">Lastname:</label>
+            <input name="lastname" type="text" class="required" />
+            <label for="dob">Date of birth:</label>
+            <input name="dob" type="date">
           </fieldset>
           <fieldset class="next">
-            <label for="username">Username:</label>
-            <input name="username" type="text">
-            <label for="bio">Short Bio:</label>
-            <textarea name="bio" class="required"></textarea>
+            <label for="street">Street:</label>
+            <input name="street" type="text" class="required" />
+            <label for="postcode">Postcode:</label>
+            <input name="postcode" type="text" class="required" />
+            <label for="state">State:</label>
+            <input name="state" type="text" class="required" />
           </fieldset>
           <fieldset class="next">
-            <label for="interests">Basic Interests:</label>
-            <textarea name="bio"></textarea>
-            <p>Receive newsletter?<br>
-              <input type="radio" name="newsletter" value="yes"><label for="newsletter">yes</label>
-              <input type="radio" name="newsletter" value="no"><label for="newsletter">no</label>
+            <label for="pcleardoc">Police Clearance Document</label>
+            <input name="pcleardoc" type="file">
+            <label for="pcleardate">Date of issue:</label>
+            <input name="pcleardate" type="date">
+            <label for="wwccdoc">Working with Children Check Document:</label>
+            <input name="wwccdoc" type="file">
+            <label for="wwcccardnum">Working with Children Check card number:</label>
+            <input name="wwcccardnum" type="text" class="required" />
+            <label for="wwwccardexpire">Workthing with Children Check card expiry:</label>
+            <input name="wwwccardexpire" type="date">
+          </fieldset>
+          <fieldset class="next">
+            <p>I declare that the information documented here is all correct and
+              honest to the best of my knowledge. I understand that Cahoots has
+              limited volunteer accident insurance applicable to a percentage of
+              only those medical expenses not covered by Medicare. I acknowledge
+              that a copy of the aforesaid policy is available for my information
+              should I request it.
             </p>
-            <input type="checkbox" name="vehicle" value="Bike" class="required"> I have a bike<br>
-            <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br>
-            <p>
-            </p>
-
-            <input type="date" name="date">
-          </fieldset>
-          <fieldset class="next">
-            <label for="referrer">Referred by:</label>
-            <input type="text" name="referrer">
-            <label for="phone">Daytime Phone:</label>
-            <input type="tel" name="phone">
+            <input type="checkbox" name="declaration" value="I agree"> Yes<br>
           </fieldset>
           <a class="btn" id="next">Next Section ▷</a>
           <input type="submit" class="btn">

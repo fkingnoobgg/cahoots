@@ -10,7 +10,7 @@ body {
 }
 #signup {
   width: 600px;
-  height: auto;
+  height: 400px;
   padding: 20px;
   background: #fff;
   margin: 80px auto;
@@ -31,6 +31,8 @@ input[type=text],
 input[type=email],
 input[type=password],
 input[type=tel],
+input[type=file],
+input[type=date],
 textarea {
   display: block;
   -webkit-appearance: none;
@@ -175,6 +177,7 @@ textarea + .valid {
   right: 20px;
   font-family: 'Merriweather Sans', sans-serif;
 }
+
 .btn:hover {
   background: #26a19a;
 }

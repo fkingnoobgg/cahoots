@@ -37,7 +37,6 @@ $("form").on("submit", function(e){
   if ($("#next").is(":visible") || $("fieldset.current").index() < 3){
     e.preventDefault();
   }
-  alert("here")
   var data = JSON.stringify($("#signup").serializeArray());
   console.log(data);
   e.preventDefault();
